@@ -3,30 +3,19 @@
 import os
 
 def firstCall():
-    os.system('adb shell am start -a android.intent.action.CALL -d tel:+918298929363')
+    os.system('adb shell am start -a android.intent.action.CALL -d tel:+91xxxxxxxxxx') #put your friend_1 mobile number here
 
 def secondCall():
-    os.system('adb shell am start -a android.intent.action.CALL -d tel:+919798550770')
+    os.system('adb shell am start -a android.intent.action.CALL -d tel:+91xxxxxxxxxx') #put your friend_2 mobile number here
 
-print('Calling Mursaleen or Vicky')
+print('Calling Friend_1 or Friend_2') #you can change your friend name here
 print('Choose the options 1 or 2 :')
 val = int(input())
 if val >= 0:
     if val == 1 :
-        print('Calling Mursaleen')
+        print('Calling Friend_1')
         firstCall()
     if val == 2:
-        print('Calling Vicky')
+        print('Calling Friend_2')
         secondCall()
-        #pass
-    #else :
-     #   print('Next Time Better')
-    #pass 
-#else :
-    #print('Thank You')
-
-#os.system('adb devices')
-#os.system("adb devices -l")
-#os.system('adb shell getprop ro.build.version.release')
-#os.system('adb usb')
-#os.system('adb shell')
+  
